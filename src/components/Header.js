@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 function Header() {
     return (
-        <div>
-            <h1>Header</h1>
+        <div className="header">
+            <div>
+                <form>
+                    <label><strong>Where do you want to go?</strong></label><br />
+                    <input type="text" name="destination" placeholder="e.g. Paris" />
+                    <button type="submit">Go!</button>
+                </form>
+            </div>
         </div>
     )
 }
